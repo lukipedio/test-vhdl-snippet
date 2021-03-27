@@ -1,3 +1,3 @@
 # test-vhdl-snippet 
 
-https://travis-ci.com/lukipedio/test-vhdl-snippet.svg?branch=main
+[![Build Status](https://travis-ci.com/lukipedio/test-vhdl-snippet.svg?branch=main)](https://travis-ci.com/lukipedio/test-vhdl-snippet)
