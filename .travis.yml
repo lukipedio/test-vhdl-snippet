@@ -1,0 +1,16 @@
+# Any language can be specified, the ghdl scripts not depend any of them.
+# (Default language is ruby on travis)
+# language: python
+
+# Specify, that we want to use docker in the docker :)
+services:
+  - docker
+
+# Here are the list of run scripts of different DUTs/testcases
+script:
+
+# Notification is optional
+notifications:
+  email:
+    on_success: never
+    on_failure: always
