@@ -6,9 +6,17 @@ language: python
 services:
   - docker
 
+before_install:
+- docker ps -a
+
 # Here are the list of run scripts of different DUTs/testcases
 script:
-
+# Testing the installation of the ghdl
+- docker run -t ghdl/ghdl:buster-mcode ghdl --version
+  
+# Mount the repo to docker, and run the hello world example
+- > 
+  docker run -t -v `pwd`:/mnt/data ghdl/ghdl:buster-mcode
 # Notification is optional
 notifications:
   email:
