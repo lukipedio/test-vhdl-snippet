@@ -1,6 +1,6 @@
 # Any language can be specified, the ghdl scripts not depend any of them.
 # (Default language is ruby on travis)
-# language: python
+language: python
 
 # Specify, that we want to use docker in the docker :)
 services:
