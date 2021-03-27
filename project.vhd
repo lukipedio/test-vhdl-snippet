@@ -18,6 +18,6 @@ architecture rtl of project is
         process(i_data)
         begin
             temp <= "00000000" & i_data;
-            shifted_pixel <= shift_left(temp, 5);
+            shifted_pixel <= std_logic_vector(shift_left(unsigned(temp), 5));
         end process;
 end rtl;
